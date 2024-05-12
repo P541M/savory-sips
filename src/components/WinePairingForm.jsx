@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function WinePairingForm({ setWines }) {
+const WinePairingForm = ({ setWines }) => {
   const [dish, setDish] = useState('');
 
   const handleSubmit = async (e) => {
@@ -12,14 +12,15 @@ function WinePairingForm({ setWines }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="mt-8">
       <input
         type="text"
         value={dish}
         onChange={(e) => setDish(e.target.value)}
         placeholder="Enter your dish"
+        className="p-2 border border-gray-300 rounded mr-4"
       />
-      <button type="submit">Get Wine Pairing</button>
+      <button type="submit" className="p-2 bg-blue-500 text-white rounded hover:bg-blue-700">Get Wine Pairing</button>
     </form>
   );
 }

@@ -1,18 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #FFFBEA;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll bars */
+  font-family: 'Lora', serif; /* Default body text font */
+  box-sizing: border-box;
 }
 
-span,
-.primary-color {
-  background-image: #662D4B;
-  -webkit-background-clip: text;
-  color: transparent;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Initial dimmed background for the LandingPage component */
+.landing-page {
+  background-image: url('assets/background.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5); /* Initial dimmed background */
+}
+
+/* Transition effect for the App component */
+.app-container {
+  background-color: black; /* Fallback color */
+  transition: background-color 0.5s ease;
+}
+
+.app-overlay {
+  pointer-events: none;
+  transition: background 0.5s ease;
 }
