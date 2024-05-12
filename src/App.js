@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import WinePairingForm from './components/WinePairingForm';
+import WineList from './components/WineList';
+import './App.css';  // Ensure you have a custom CSS file for styling if needed
 
 function App() {
+  const [wines, setWines] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WinePairingForm setWines={setWines} />
+      <WineList wines={wines} />
     </div>
   );
 }
