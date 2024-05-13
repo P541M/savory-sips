@@ -7,9 +7,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll bars */
-  font-family: 'Lora', serif; /* Default body text font */
+  font-family: 'Lora', serif;
+  color: #1E2B3E;
   box-sizing: border-box;
+  background-color: #eceffa;
 }
 
 body {
@@ -17,22 +18,35 @@ body {
   padding: 0;
 }
 
-/* Initial dimmed background for the LandingPage component */
-.landing-page {
-  background-image: url('assets/background.jpg'); /* Path to your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.5); /* Initial dimmed background */
-}
-
-/* Transition effect for the App component */
 .app-container {
-  background-color: black; /* Fallback color */
-  transition: background-color 0.5s ease;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.app-overlay {
-  pointer-events: none;
-  transition: background 0.5s ease;
+.logo-section {
+  text-align: center;
 }
+
+.hero-section {
+  text-align: center;
+}
+
+.wine-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+
+
+
