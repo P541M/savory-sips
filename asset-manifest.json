@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/savory-sips/static/css/main.169a4f13.css",
+    "main.js": "/savory-sips/static/js/main.9b316fbc.js",
+    "static/media/logo.png": "/savory-sips/static/media/logo.9a7c47d5a9a9c37d86f4.png",
+    "static/media/logoHero.png": "/savory-sips/static/media/logoHero.32a783e495197090e127.png",
+    "index.html": "/savory-sips/index.html",
+    "main.169a4f13.css.map": "/savory-sips/static/css/main.169a4f13.css.map",
+    "main.9b316fbc.js.map": "/savory-sips/static/js/main.9b316fbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.169a4f13.css",
+    "static/js/main.9b316fbc.js"
+  ]
+}
