@@ -4,6 +4,7 @@ Your own personal sommelier! Implemented spoonaculars wine pairing API to delive
 ## Upcoming Changes
 - Optimize for mobile
 - Adjust overall styling (margins and centering)
+- 150 api calls per day only (may change)
 - Restructure the whole website, break into components.
 
 ## Contact
