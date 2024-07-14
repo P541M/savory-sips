@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import WineResults from "./components/WineResults";
 import "./index.css";
 
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Header />
       <Hero />
+      <About/>
       {/* <WineResults wines={wines} setWines={setWines} /> */}
     </div>
   );

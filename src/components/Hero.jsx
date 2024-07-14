@@ -4,7 +4,7 @@ import wineBackground from "../assets/heroimg.jpg";
 const Hero = () => {
   return (
     <div
-      className="hero-section mb-8 w-full flex flex-col items-center justify-center"
+      className="hero-section w-full flex flex-col items-center justify-center"
       style={{
         backgroundImage: `url(${wineBackground})`,
         backgroundSize: "cover",
