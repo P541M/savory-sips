@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <Hero setWines={setWines} /> */}
+      <Hero setWines={setWines} />
       {/* <WineResults wines={wines} /> */}
     </div>
   );
