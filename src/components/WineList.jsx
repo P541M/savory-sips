@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const WineList = ({ wines }) => {
   return (
@@ -8,11 +8,15 @@ const WineList = ({ wines }) => {
       )}
       <div className="w-full flex justify-center">
         <div className="wine-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-          {wines.length > 0 && wines.map((wine, index) => (
-            <div key={index} className="p-4 text-xl border rounded-2xl bg-[#f6f9ff]">
-              <p className="font-bold font-josefin uppercase">{wine}</p>
-            </div>
-          ))}
+          {wines.length > 0 &&
+            wines.map((wine, index) => (
+              <div
+                key={index}
+                className="p-4 text-xl border rounded-2xl bg-[#f6f9ff]"
+              >
+                <p className="font-bold font-josefin uppercase">{wine}</p>
+              </div>
+            ))}
         </div>
       </div>
     </div>
@@ -20,3 +24,5 @@ const WineList = ({ wines }) => {
 };
 
 export default WineList;
+
+// The wine reco section, this is the thing that holds the wine results

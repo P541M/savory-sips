@@ -2,51 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Header Font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+/* Body Font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+
 /* Global styles */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Lora', serif;
-  color: #1E2B3E;
-  box-sizing: border-box;
-  background-color: #eceffa;
-}
-
 body {
-  margin: 0;
-  padding: 0;
+  @apply bg-bg text-text;
+  font-family: "DM Serif Display", sans-serif;
 }
-
-.app-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo-section {
-  text-align: center;
-}
-
-.hero-section {
-  text-align: center;
-}
-
-.wine-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-}
-
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-
-
-
