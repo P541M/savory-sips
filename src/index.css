@@ -12,4 +12,14 @@
 body {
   @apply bg-bg text-text;
   font-family: "DM Serif Display", sans-serif;
+  @apply tracking-wider;
+}
+
+/* Specific font usage */
+.header-font {
+  font-family: "DM Serif Display", serif;
+}
+
+.body-font {
+  font-family: "DM Sans", sans-serif;
 }

@@ -3,9 +3,9 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <div className="w-full my-14 flex justify-center">
+    <div className="w-full my-8 flex justify-center font-bold">
       <div className="flex flex-row items-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">SAV</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl">SAV</h1>
         <div
           className="flex items-center"
           style={{
@@ -25,7 +25,7 @@ const Header = () => {
             }}
           />
         </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">RY SIPS</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl">RY SIPS</h1>
       </div>
     </div>
   );
