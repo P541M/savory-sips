@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full flex items-center justify-center bg-bgContrast relative h-[250px] body-font px-10">
-      <div className="text-center text-text">
-        <p className="text-lg md:text-xl max-w-[1200px]">
+    <div className="w-full flex items-center justify-center relative body-font px-8 md:px-20 h-[310px]">
+      <div className="text-center">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-screen-lg mx-auto">
           A well-chosen wine can elevate a meal to new heights, enhancing the
           flavors and creating a memorable dining experience. Sommeliers are
           experts in wine pairing, using their extensive knowledge to recommend

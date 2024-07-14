@@ -12,8 +12,8 @@ function App() {
     <div>
       <Header />
       <Hero />
-      <About/>
-      {/* <WineResults wines={wines} setWines={setWines} /> */}
+      <About />
+      <WineResults wines={wines} setWines={setWines} />
     </div>
   );
 }

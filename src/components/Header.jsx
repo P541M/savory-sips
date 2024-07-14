@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="w-full my-8 flex justify-center font-bold">
       <div className="flex flex-row items-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl">SAV</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl">Sav</h1>
         <div
           className="flex items-center"
           style={{
@@ -25,7 +25,7 @@ const Header = () => {
             }}
           />
         </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl">RY SIPS</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl">ry Sips</h1>
       </div>
     </div>
   );
