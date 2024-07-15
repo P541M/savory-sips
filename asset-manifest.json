@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/savory-sips/static/css/main.169a4f13.css",
-    "main.js": "/savory-sips/static/js/main.9b316fbc.js",
+    "main.css": "/savory-sips/static/css/main.a05e80c5.css",
+    "main.js": "/savory-sips/static/js/main.5d91ac5f.js",
+    "static/media/video.mp4": "/savory-sips/static/media/video.4e7e4d4b9045e77d928c.mp4",
     "static/media/logo.png": "/savory-sips/static/media/logo.9a7c47d5a9a9c37d86f4.png",
-    "static/media/logoHero.png": "/savory-sips/static/media/logoHero.32a783e495197090e127.png",
     "index.html": "/savory-sips/index.html",
-    "main.169a4f13.css.map": "/savory-sips/static/css/main.169a4f13.css.map",
-    "main.9b316fbc.js.map": "/savory-sips/static/js/main.9b316fbc.js.map"
+    "main.a05e80c5.css.map": "/savory-sips/static/css/main.a05e80c5.css.map",
+    "main.5d91ac5f.js.map": "/savory-sips/static/js/main.5d91ac5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.169a4f13.css",
-    "static/js/main.9b316fbc.js"
+    "static/css/main.a05e80c5.css",
+    "static/js/main.5d91ac5f.js"
   ]
 }
