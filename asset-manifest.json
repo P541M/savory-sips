@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/savory-sips/static/css/main.a05e80c5.css",
-    "main.js": "/savory-sips/static/js/main.5d91ac5f.js",
+    "main.js": "/savory-sips/static/js/main.5ae4768a.js",
     "static/media/video.mp4": "/savory-sips/static/media/video.4e7e4d4b9045e77d928c.mp4",
     "static/media/logo.png": "/savory-sips/static/media/logo.9a7c47d5a9a9c37d86f4.png",
     "index.html": "/savory-sips/index.html",
     "main.a05e80c5.css.map": "/savory-sips/static/css/main.a05e80c5.css.map",
-    "main.5d91ac5f.js.map": "/savory-sips/static/js/main.5d91ac5f.js.map"
+    "main.5ae4768a.js.map": "/savory-sips/static/js/main.5ae4768a.js.map"
   },
   "entrypoints": [
     "static/css/main.a05e80c5.css",
-    "static/js/main.5d91ac5f.js"
+    "static/js/main.5ae4768a.js"
   ]
 }
