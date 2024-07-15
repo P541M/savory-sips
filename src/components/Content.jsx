@@ -115,7 +115,7 @@ const Content = ({ wines, setWines }) => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-bg text-text py-4 flex items-center justify-center">
+      <div className="w-full bg-bg text-text py-4 flex items-center justify-center fade-up">
         <div className="text-center">
           <p className="text-sm sm:text-base md:text-lg lg:text-xl body-font">
             &copy; {new Date().getFullYear()} Savory Sips
