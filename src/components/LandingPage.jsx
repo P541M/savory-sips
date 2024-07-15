@@ -32,9 +32,9 @@ const LandingPage = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-text opacity-70"></div>
       {/* Main Content */}
-      <div className="relative w-full flex flex-col items-center justify-center body-font px-8 md:px-20 py-12 lg:py-20 min-h-screen">
+      <div className="relative w-full flex flex-col items-center justify-center body-font px-8 md:px-20 py-12 lg:py-20 min-h-screen fade-up">
         <div className="relative text-center max-w-screen-lg mx-auto">
-          <div className="flex flex-row items-center justify-center mb-5">
+          <div className="flex flex-row items-center justify-center mb-5 fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl header-font">
               SAV
             </h1>
@@ -63,13 +63,13 @@ const LandingPage = () => {
               RY SIPS
             </h1>
           </div>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl pb-12">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl pb-12 fade-up">
             Discover the perfect wine pairing for any dish, curated by
             technology.
           </p>
           <a
             href="#content"
-            className="px-6 py-2 bg-primary text-bg font-bold rounded-lg hover:bg-accent transition"
+            className="px-6 py-2 bg-primary text-bg font-bold rounded-lg hover:bg-accent transition fade-up"
           >
             Get Started
           </a>
