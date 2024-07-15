@@ -1,9 +1,52 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/logo.png";
+import backgroundVideo from "../assets/video.mp4"; // Ensure you have the video file
 
 const LandingPage = () => {
+  useEffect(() => {
+    const videoElement = document.getElementById("background-video");
+
+    const handleVideoLoop = () => {
+      videoElement.classList.add("fade-out");
+      setTimeout(() => {
+        videoElement.classList.remove("fade-out");
+        videoElement.currentTime = 0;
+        videoElement.classList.add("fade-in");
+        videoElement.play();
+      }, 500); // Adjust the timeout duration to match the fade-out duration
+    };
+
+    videoElement.addEventListener("timeupdate", () => {
+      if (videoElement.currentTime >= videoElement.duration - 0.5) {
+        handleVideoLoop();
+      }
+    });
+
+    videoElement.addEventListener("play", () => {
+      videoElement.classList.add("fade-in");
+      setTimeout(() => {
+        videoElement.classList.remove("fade-in");
+      }, 500);
+    });
+
+    return () => {
+      videoElement.removeEventListener("timeupdate", handleVideoLoop);
+      videoElement.removeEventListener("play", handleVideoLoop);
+    };
+  }, []);
+
   return (
     <div className="w-full flex flex-col items-center justify-center min-h-screen bg-text text-bg relative">
+      {/* Background Video */}
+      <video
+        id="background-video"
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src={backgroundVideo}
+        autoPlay
+        muted
+      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-text opacity-70"></div>
       {/* Main Content */}
       <div className="relative w-full flex flex-col items-center justify-center body-font px-8 md:px-20 py-12 lg:py-20 min-h-screen">
         <div className="relative text-center max-w-screen-lg mx-auto">
