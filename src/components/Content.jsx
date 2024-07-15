@@ -63,10 +63,10 @@ const Content = ({ wines, setWines }) => {
               recommend wines that perfectly complement your dish, bringing out
               the best in both the food and the wine.
             </p>
-            <hr className="w-full border-t-2 border-primary my-8 fade-up" />
-            <p className="text-sm md:text-base lg:text-lg text-secondary italic mb-12 fade-up">
+            <p className="text-sm md:text-base lg:text-lg text-secondary italic mb-6 fade-up">
               "Wine is sunlight, held together by water." — Galileo Galilei
             </p>
+            <hr className="w-full border-t-1 border-primary my-8 fade-up" />
             <form
               onSubmit={handleSubmit}
               className="mt-8 flex flex-col items-center w-full max-w-md mx-auto fade-up"
@@ -121,7 +121,7 @@ const Content = ({ wines, setWines }) => {
             &copy; {new Date().getFullYear()} Savory Sips
           </p>
           <p className="text-sm body-font mt-1">
-            Website by{" "}
+            Created by{" "}
             <a
               href="https://github.com/P541M"
               target="_blank"
