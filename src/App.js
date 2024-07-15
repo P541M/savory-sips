@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import WineResults from "./components/WineResults";
+import LandingPage from "./components/LandingPage";
+import Content from "./components/Content";
 import "./index.css";
 
 function App() {
@@ -10,10 +8,8 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <Hero />
-      <About />
-      <WineResults wines={wines} setWines={setWines} />
+      <LandingPage />
+      <Content wines={wines} setWines={setWines} />
     </div>
   );
 }
