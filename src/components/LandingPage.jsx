@@ -7,10 +7,12 @@ const LandingPage = () => {
       {/* Main Content */}
       <div className="relative w-full flex flex-col items-center justify-center body-font px-8 md:px-20 py-12 lg:py-20 min-h-screen">
         <div className="relative text-center max-w-screen-lg mx-auto">
-          <div className="flex flex-row items-center justify-center mb-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl">SAV</h1>
+          <div className="flex flex-row items-center justify-center mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl header-font">
+              SAV
+            </h1>
             <div
-              className="flex items-center mx-2"
+              className="flex items-center mx-1"
               style={{
                 width: "3em",
                 height: "3.25em",
@@ -30,14 +32,17 @@ const LandingPage = () => {
                 }}
               />
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl">RY SIPS</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl header-font">
+              RY SIPS
+            </h1>
           </div>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6">
-            Discover the perfect wine pairing for any dish, curated by experts.
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl pb-12">
+            Discover the perfect wine pairing for any dish, curated by
+            technology.
           </p>
           <a
             href="#content"
-            className="px-6 py-2 bg-primary text-bg font-bold rounded-full hover:bg-accent transition"
+            className="px-6 py-2 bg-primary text-bg font-bold rounded-lg hover:bg-accent transition"
           >
             Get Started
           </a>
