@@ -18,6 +18,7 @@ body {
 /* Specific font usage */
 .header-font {
   font-family: "DM Serif Display", serif;
+  @apply tracking-widest;
 }
 
 .body-font {
@@ -28,7 +29,7 @@ body {
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
