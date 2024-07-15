@@ -39,7 +39,7 @@ const LandingPage = () => {
               SAV
             </h1>
             <div
-              className="flex items-center mx-1"
+              className="flex items-center mr-2"
               style={{
                 width: "3em",
                 height: "3.25em",
