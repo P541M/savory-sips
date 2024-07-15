@@ -23,30 +23,3 @@ body {
 .body-font {
   font-family: "DM Sans", sans-serif;
 }
-
-/* Add these styles to your CSS file */
-#background-video.fade-out {
-  animation: fadeOut 0.5s forwards;
-}
-
-#background-video.fade-in {
-  animation: fadeIn 0.5s forwards;
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}

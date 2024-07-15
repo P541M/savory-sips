@@ -7,31 +7,14 @@ const LandingPage = () => {
     const videoElement = document.getElementById("background-video");
 
     const handleVideoLoop = () => {
-      videoElement.classList.add("fade-out");
-      setTimeout(() => {
-        videoElement.classList.remove("fade-out");
-        videoElement.currentTime = 0;
-        videoElement.classList.add("fade-in");
-        videoElement.play();
-      }, 500); // Adjust the timeout duration to match the fade-out duration
+      videoElement.currentTime = 0;
+      videoElement.play();
     };
 
-    videoElement.addEventListener("timeupdate", () => {
-      if (videoElement.currentTime >= videoElement.duration - 0.5) {
-        handleVideoLoop();
-      }
-    });
-
-    videoElement.addEventListener("play", () => {
-      videoElement.classList.add("fade-in");
-      setTimeout(() => {
-        videoElement.classList.remove("fade-in");
-      }, 500);
-    });
+    videoElement.addEventListener("ended", handleVideoLoop);
 
     return () => {
-      videoElement.removeEventListener("timeupdate", handleVideoLoop);
-      videoElement.removeEventListener("play", handleVideoLoop);
+      videoElement.removeEventListener("ended", handleVideoLoop);
     };
   }, []);
 
@@ -43,6 +26,7 @@ const LandingPage = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={backgroundVideo}
         autoPlay
+        loop
         muted
       />
       {/* Overlay */}
